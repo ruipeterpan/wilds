@@ -167,6 +167,8 @@ def main():
 
     config = parser.parse_args()
     config = populate_defaults(config)
+    
+    print(f"config {config}")
 
     # For the GlobalWheat detection dataset,
     # we need to change the multiprocessing strategy or there will be
